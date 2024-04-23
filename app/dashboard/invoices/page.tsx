@@ -7,6 +7,12 @@ import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { fetchInvoicesPages } from "@/app/lib/data";
 import Pagination from "@/app/ui/invoices/pagination";
 
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
+
 export default async function InvoicesPage({ searchParams } : { searchParams?: { query?: string; page?: string } }) {
     const query = searchParams?.query || '';
     const currentPage = Number(searchParams?.page || 1);
