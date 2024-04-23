@@ -35,7 +35,7 @@ export default function Page() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
           <Image src="/hero-desktop.png" alt="Hero Image" width="1000" height="760" className="hidden md:block" />
-          <Image src="/hero-mobile.png" alt="Hero Mobile Image" width="560" height="620" className="hidden md:block" />
+          <Image src="/hero-mobile.png" alt="Hero Mobile Image" width="560" height="620" className="md:hidden block" />
         </div>
       </div>
     </main>
